@@ -1,0 +1,16 @@
+title: 'read file '
+description: 'This is a python code to open, read and display the content of the file'
+template:
+  repo: read-file-template
+  name: read-file
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
